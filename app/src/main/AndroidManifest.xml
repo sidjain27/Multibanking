@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name=".GlobalClass"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Multi Banking"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".splashActivity"
+            android:label="MULTI BANKING">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".customer_reg" />
+        <activity android:name=".bank_reg" />
+        <activity android:name=".cust_home" />
+        <activity
+            android:name=".LoginActivity2"
+            android:label="@string/title_activity_login2" />
+        <activity android:name=".bank_home" />
+        <activity android:name=".admin" />
+        <activity android:name=".user_del" />
+        <activity android:name=".Send_money" />
+        <activity android:name=".Cust_prof" />
+        <activity
+            android:name=".bank_prof"
+            android:label="@string/title_activity_bank_prof" />
+        <activity android:name=".cust_req" />
+        <activity
+            android:name=".send_query"
+            android:label="@string/title_activity_send_query" />
+        <activity android:name=".admin_req" />
+        <activity android:name=".admin_req1" />
+        <activity android:name=".admin_trans" />
+        <activity android:name=".bank_trans" />
+        <activity android:name=".bank_query" />
+        <activity android:name=".bank_query1"></activity>
+    </application>
+
+</manifest>

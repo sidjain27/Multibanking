@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".admin_req" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="User ID:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/textView62"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_marginLeft="32dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="31dp"
+        android:layout_toRightOf="@+id/textView62"
+        android:src="@android:drawable/ic_lock_power_off" />
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView1"
+        android:layout_weight="0.15"
+        android:hint="search based on location">
+
+    </EditText>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:layout_marginBottom="200dp"
+            android:orientation="vertical" >
+
+            <ListView
+                android:id="@+id/listView1"
+                android:layout_width="wrap_content"
+                android:layout_height="353dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"></ListView>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

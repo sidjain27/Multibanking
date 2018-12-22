@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font</item>
+        <item>@font/chelsea_market</item>
+        <item>@font/flamenco</item>
+        <item>@font/flamenco_light</item>
+        <item>@font/nixie_one</item>
+        <item>@font/sniglet</item>
+        <item>@font/syncopate</item>
+    </array>
+</resources>
